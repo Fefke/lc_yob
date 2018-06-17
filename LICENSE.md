@@ -13,14 +13,14 @@ _______________________________________________________________________
 This is the Github Version of my YOB Add-on.
 You are allowed to set changes however they affect to the programm.
 
-#############################
+
 #         FREEDOM           #
-#############################
+
 	- Do whatever you want to do
 
-#############################
+
 #          LIMITs           #
-#############################
+
 	- For you is the world opened!
 	
 _______________________________________________________________________	
