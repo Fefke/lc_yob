@@ -10,32 +10,18 @@
 _______________________________________________________________________		
 	L	I 	C	E	N	S	E  
 
-You are allowed to use our Add-on for all of your customers.
-After every "Update" in the Settings, new users are registerd
-in a own yob table. -> For more see READ.me
-
-An another thing (not needed) is to give us feedback in the Litecart Forum
-so we can make this and future Add-ons better and better.
+This is the Github Version of my YOB Add-on.
+You are allowed to set changes however they affect to the programm.
 
 #############################
 #         FREEDOM           #
 #############################
-	- Whatever is not disabled or marked as unuseable can used by everyone.
+	- Do whatever you want to do
 
 #############################
 #          LIMITs           #
 #############################
-	- We build in an Ammount limitation that can not passed by 
-	with deleting any of our code.
-	TheLimit is set on //999,99// Units (No matter what currency)
-	
-#############################
-#         FairUse           #
-#############################
-
-999,99? -> That's about FairUse: If enough Persons are interested,
-we will bring an **Pro** Version with all Features for
-Management you will ever need.
+	- For you is the world opened!
 	
 _______________________________________________________________________	
 Version 1.0
@@ -45,7 +31,7 @@ Version 1.0
 
 
 -----------------------------------------------------------------------
-We checked our product from top to bottom, but ...
+
 ( ! ) We assume no liability for problems and errors of any kind ( ! )
-Even if this leads to the loss of many and important data.
+
 -----------------------------------------------------------------------
