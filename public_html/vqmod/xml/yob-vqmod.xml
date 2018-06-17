@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<modification
+				xmlns="https://github.com/vqmod/vqmod"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="https://github.com/vqmod/vqmod https://raw.githubusercontent.com/vqmod/vqmod/master/vqmod.xsd">
+		<id>We make your own bank dynamic!</id>
+		<version>1.0</version>
+		<vqmver>2.X</vqmver>
+		<author>Felix B.</author>
+		
+		
+		<!-- ADMIN Operations -->
+		
+		<file name="admin/modules.app/edit_module.inc.php">
+			<operation info="Before Translation, add Update Button">
+				<search position="after"><![CDATA[
+							<tbody>
+							]]>
+				</search>
+				<add><![CDATA[
+				<?php if ($module->data['module_id'] == "pm_YourBank") {
+				(new yobfu)->tbuttons($module->data['module_id']);
+				}?>
+				]]></add>
+			</operation>
+			
+			<operation info="Hidden Info for E-Mail input">
+				<search position="after"><![CDATA[
+							</table>
+							]]>
+				</search>
+				<add><![CDATA[
+				<?php if ($module->data['module_id'] == "pm_YourBank") {
+					(new yobfu)->email_style();
+				}?>
+				]]></add>
+			</operation>
+			<operation info="INPUT yob admin JS">
+				<search position="before"><![CDATA[
+					<p class="btn-group">
+					]]>
+				</search>
+				<add><![CDATA[
+				<?php 
+					if ($module->data['module_id'] == "pm_YourBank") {
+						echo '<script type="text/javascript" src="' . WS_DIR_EXT . 'yob/admin/yob.js"></script>';
+					}?>
+				]]></add>
+			</operation>	
+			
+			<operation info="Usermanagement Segment">
+				<search position="before"><![CDATA[				
+					<?php echo functions::form_draw_form_end(); ?>
+					]]>
+				</search>
+				<add><![CDATA[
+				<?php 
+				if ($module->data['module_id'] == "pm_YourBank") {
+					(new yobfu)->umtable($module->data['module_id']);
+				}					
+				?>
+				]]></add>
+			
+			</operation>
+			
+			<operation info="Hidden Info for E-Mail input">
+				<search position="after"><![CDATA[
+							</table>
+							]]>
+				</search>
+				<add><![CDATA[
+				<?php if ($module->data['module_id'] == "pm_YourBank") {?>
+					<style>
+					/*For the following*/
+					
+					.infobox {
+						display: none;
+						position: fixed;
+						top: 0;
+						color: white;
+						padding: 15px;
+						left: 50%;
+						min-left: 250px!important;
+						min-width: 120px!important;
+						font-weight: bold;
+					}	
+					#good {
+						background-color: rgba(0,180,0,0.9);
+					}
+					
+					#bad {
+						background-color: rgba(200,0,0,0.8);
+					}
+					</style>
+					
+					<div id="good" class="infobox">This E-Mail will work!</div>
+					<div id="bad" class="infobox">Change your Adress to the same host!</div>
+				<?php }?>
+				]]></add>
+			</operation>
+			
+		</file>
+		<file name="/includes/controllers/ctrl_module.inc.php">
+			<operation info="Insert Updating availability for the UMS">
+				<search position="before"><![CDATA[
+							cache::clear_cache('modules');
+				]]>
+				</search>
+				<add><![CDATA[
+				if ($module->data['module_id'] == "pm_YourBank") {
+					(new yobfu)->save();
+				}
+				]]></add>
+			</operation>
+		</file>
+		
+		<!--Customer Side-->
+		
+		<!--file name="includes/library/lib_document.inc.php">
+			<operation info="INNPUT yob customer JS">
+				<search position="after"><![CDATA[
+                . '</script>' . PHP_EOL;
+				]]></search>
+				<add><![CDATA[
+				 self::$snippets['javascript'] =  self::$snippets['javascript'] . '<script type="text/javascript" src="' .  WS_DIR_EXT . 'yob/customer/yob.js"' . '></script>';
+				]]></add>
+			</operation>		
+		</file-->
+		
+</modification>

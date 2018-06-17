@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<failure>
+		<code>
+			<F id="100">
+				<titel>
+					Unknown - Error!
+				</titel>
+				
+				<description>
+					There is an unknown Problem, please report at the LC-Forum -> ' . $contact_forum . '
+				</description>
+			</F>
+			<F id="1">
+				<titel>
+					Security problem!
+				</titel>
+				
+				<description>
+					An important Security sensor hit alert!
+				</description>
+			</F>
+			<F id="2">
+				<titel>
+					Database - Error!
+				</titel>
+				
+				<description>
+				<![CDATA[
+					It seems like we are not allowed to acess our tables,<br>
+					please try to reconnect -> refresh | restart | reinstall 
+				]]>
+				</description>
+			</F>
+			<F id="3">
+				<titel>
+					
+				</titel>
+				
+				<description>
+					
+				</description>
+			</F>
+			<F id="4">
+				<titel>
+					
+				</titel>
+				
+				<description>
+					
+				</description>
+			</F>
+			<F id="5">
+				<titel>
+					
+				</titel>
+				
+				<description>
+					
+				</description>
+			</F>
+			<F id="6">
+				<titel>
+					Add-on internal or programming failure.
+				</titel>
+				
+				<description>
+					<![CDATA[
+						It seems like the programmer had a problem with coding...<br>
+						<br>Poor boy!<br><br>
+						Please bring in the following informations about the programming error:
+					]]>
+				</description>
+			</F>
+			<F id="7">
+				<titel>
+					
+				</titel>
+				
+				<description>
+					
+				</description>
+			</F>
+			<F id="8">
+				<titel>
+					
+				</titel>
+				
+				<description>
+					
+				</description>
+			</F>
+			<F id="9">
+				<titel>
+					Currency Error!
+				</titel>
+				
+				<description>
+					It seems like one of your Currencys is invalid or brings an Error.
+				</description>
+			</F>
+			<F id="10">
+				<titel>
+					Unknown User - Error!
+				</titel>
+				
+				<description>
+					<![CDATA[
+						One of your users brought up an unknown error,<br>
+						please check his Data over your admin panel<br>
+						or over your Database Interface<br>
+					]]>
+				</description>
+			</F>
+			<F id="11">
+				<titel>
+					User Ghost Agent - Error!
+				</titel>
+				
+				<description>
+					One of your users is Ghosting -but we have seen him-
+				</description>
+			</F>
+		</code>
+		
+		<contact>
+			<text id="t1">
+				If you can not find an solution contact me over:
+			</text>
+			<email>
+				<a href="mailto:frag.mich.hier@gmail.com">E-Mail</a>
+			</email>
+			<lc_forum>
+				https://www.litecart.net/forums/
+			</lc_forum>
+			
+		</contact>
+		
+		<sonstiges>
+			<info><![CDATA[
+			<p style="font-size: 10px;">
+			This is an automated e-mail.<br>
+			To disable it, go over the<br>
+			Admin interface to the tab Modules and select payment modules.<br>
+			Then click on the Your Bank add-on and deselect (slider on false) the tab Overdraw.<br>
+			<br>
+			&copy; Copyrights by Felix B.</p>
+			]]>
+			</info>
+		</sonstiges>
+	</failure>

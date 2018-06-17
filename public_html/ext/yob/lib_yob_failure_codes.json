@@ -1,0 +1,63 @@
+yobfc = {
+	"F": [
+		{ "0":"Unknown - Error!", 
+					"description": [
+							"There is an unknown Problem, please report at the LC-Forum ->",
+							"or contact me directly -> E-Mail:" 
+							]
+		},
+		
+		{ "1":"Security problem!", 
+					"description": "An important Security sensor hit alert!"
+		},
+		
+		{ "2":"Database - Error!", 
+					"description":"" },
+					
+		{ "3":"", 
+					"description":"" },
+					
+		{ "4":"", 
+					"description":"" },
+					
+		{ "5":"", 
+					"description":"" },
+					
+		{ "6":"Add-on internal or programming failure.", 
+					"description": [
+							"It seems like the programmer had a problem with coding...",
+							"Poor boy!",
+							"Please bring in the following informations about the programming error:"
+							]
+		},
+					
+		{ "7":"", 
+					"description":"" },
+					
+		{ "8":"", 
+					"description":"" },
+					
+		{ "9":"Currency Error!", 
+					"description":"It seems like one of your Currencys is invalid or brings an Error" },
+					
+		{ "10":"Unknown User - Error!", 
+					"description":[
+							"One of your users brought up an unknown error,",
+							"please check his Data over your admin panel",
+							"or over your Database Interface"
+							]
+		},
+					
+		{ "11":"User Ghost - Error!", 
+					"description":"One of your users is Ghosting -but we have seen him-" }
+		],
+	
+	"text": [],
+	
+	"contact": { "text":"If you can not find an solution contact me over:",
+				"contacts":[
+					"email":"frag.mich.hier@gmail.com",
+					"lc_forum":"https://www.litecart.net/forums/" 
+	]}
+	
+}
