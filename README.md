@@ -14,18 +14,16 @@
 				  Your Own Bank
 _______________________________________________________________________		
 
-################
 #    Prolog    #
-################
+
 
 **YOB** is an Add-on for the OpenSource Shopping System "litecart"
 With this Add-on you are allowed to give your customers virtual
 bank accounts and that with an high level of Security.
 
 
-################
 # Instructions #
-################
+
 
 1. Always backup data before making changes to your store.
     
@@ -37,18 +35,17 @@ bank accounts and that with an high level of Security.
 
 5. Let your customers pay with it. Done!
 
-#############################
+
 # Modification Instructions #
-#############################
 
 **YOB** is an easy to use add-on.
 No complicated Instructions are needed!
 The Programm does it all by itself.
 
 
-#############################
+
 #         DATABASE          #
-#############################
+
 
 We create an Table called:
 **yob_accounts**
@@ -59,9 +56,7 @@ were not allowed to pay with their Virtual Bank Account.
 For More look at **Security**
 
 
-#############################
 #         Security          #
-#############################
 
 1.	**Security** is not only written bold with us.
 	We don't want any user Data raw to see.
@@ -86,17 +81,14 @@ For More look at **Security**
 	the Order.
 
 	
-#############################
+	
 #          Images           #
-#############################
 
 Default Images were saved in:
 "/images/payment/yob/"
 
 
-#############################
 #   Vqmod Modification's    #
-#############################
 
 We have to Modificate some LC Files for
 the best User Experience.
